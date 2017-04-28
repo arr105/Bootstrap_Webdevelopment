@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+     <script language="javascript" type="text/javascript" src="js/notification.js"></script>
+<script language="javascript" type="text/javascript" src="js/memorygame.js"></script>
+<link rel="stylesheet" href="memorygame.css" type="text/css">
+
+ 
+<title>Jumbotron Template for Bootstrap</title>
+  </head>
+  <body>
+
+    <div class="container">
+        <div id="displayContainer">
+    <div class="row">
+           <div class="col-md-12" id="displayHeader"></div>
+        </div>
+    <div id="displayTimerValue">&nbsp;</div>
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="displayImageList" id="gameLevel1">
+        <img src="images/question_mark.jpg" name="q_image_1" id="q_image_1" class="questionImage">
+        <img src="images/question_mark.jpg" name="q_image_2" id="q_image_2" class="questionImage">
+        <img src="images/question_mark.jpg" name="q_image_3" id="q_image_3" class="questionImage">
+    </div>
+        </div>
+        <div class="col-md-4">
+         <div class="displayImageList" id="gameLevel2">
+        <img src="images/question_mark.jpg" name="q_image_4" id="q_image_4" class="questionImage">
+        <img src="images/question_mark.jpg" name="q_image_5" id="q_image_5" class="questionImage">
+        <img src="images/question_mark.jpg" name="q_image_6" id="q_image_6" class="questionImage">
+    </div>
+       </div>
+    <div class="col-md-4">
+          <div class="displayImageList" id="gameLevel3">
+        <img src="images/question_mark.jpg" name="q_image_7" id="q_image_4" class="questionImage">
+        <img src="images/question_mark.jpg" name="q_image_8" id="q_image_5" class="questionImage">
+        <img src="images/question_mark.jpg" name="q_image_9" id="q_image_6" class="questionImage">
+    </div>
+        </div>
+      <div id="answerList">
+    </div>
+    <div id="gameControls">
+        <input type="button" name="btnTestMe" id="btnTestMe" onclick="showMemImages();" value="Test My Memory" class="navButtons" />
+        <input type="button" name="btnChangeLevel" id="btnChangeLevel" onclick="changeGameLevel(this);" value="Proceed to Level 2" class="navButtons" />
+        <input type="button" name="btnHelp" id="btnHelp" onclick="displayHelpMessage();" value="Instructions" class="navButtons" />
+    </div>
+</div>
+        </div>
+
+</div> <!-- /container -->
+
+  </body>
+</html>
